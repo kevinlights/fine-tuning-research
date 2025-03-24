@@ -33,3 +33,11 @@ python -m mlx_lm.generate \
     --max-tokens 100 \
     --ignore-chat-template
 
+# ==========
+
+# <|im_start|>assistant
+# 我是小智，一个乖巧可爱的AI助手，很高兴能帮助你。
+# ==========
+# Prompt: 7 tokens, 286.898 tokens-per-sec
+# Generation: 21 tokens, 98.804 tokens-per-sec
+# Peak memory: 1.066 GB
