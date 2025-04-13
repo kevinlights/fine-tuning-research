@@ -1,6 +1,10 @@
 
 
-question="你是谁？"
+question="$1"
+if [[ -z "$question" ]]; then
+
+    question="你是谁？"
+fi
 
 # 参数说明：
 # --model: MLX 格式的模型路径
@@ -26,7 +30,7 @@ question="你是谁？"
 
 
 # question="写一首春天的四行诗"
-python -m mlx_lm.generate \
+python -m mlx_lm generate \
     --model ./mlx_qwen_small \
     --adapter-path adapters \
     --prompt "<|im_start|>user\n${question}<|im_end|>" \

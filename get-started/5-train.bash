@@ -1,7 +1,7 @@
 
 
 
-# python -m mlx_lm.lora \
+# python -m mlx_lm lora \
 #     --model ./mlx_qwen_small \
 #     --data ./data \
 #     --train \
@@ -94,12 +94,12 @@
 
 
 rm -rf adapters
-python -m mlx_lm.lora \
+python -m mlx_lm lora \
     --model ./mlx_qwen_small \
     --data ./data \
     --train \
     --batch-size 2 \
-    --num-layers 4\
+    --num-layers 8\
     --iters 300  \
     --fine-tune-type lora \
     --learning-rate 1e-5 \

@@ -3,7 +3,7 @@
 question="你是谁？"
 
 
-python -m mlx_lm.generate \
+python -m mlx_lm generate \
     --model ./mlx_qwen_small \
     --prompt "<|im_start|>user\n${question}<|im_end|>" \
     --max-tokens 100 \
@@ -20,7 +20,7 @@ python -m mlx_lm.generate \
 
 
 
-# python -m mlx_lm.generate \
+# python -m mlx_lm generate \
 #     --model ./mlx_qwen_small \
 #     --adapter-path adapters \
 #     --prompt "<|im_start|>user\n${question}<|im_end|>" \

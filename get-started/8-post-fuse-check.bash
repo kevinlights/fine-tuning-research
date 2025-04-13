@@ -3,7 +3,7 @@
 question="你是谁？"
 
 
-python -m mlx_lm.generate \
+python -m mlx_lm generate \
     --model ./fuse_output \
     --prompt "<|im_start|>user\n${question}<|im_end|>" \
     --max-tokens 100 \
